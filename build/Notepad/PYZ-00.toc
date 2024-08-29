@@ -1,5 +1,5 @@
-('C:\\Users\\Samya '
- 'Banerjee\\OneDrive\\Desktop\\Notepad\\build\\Notepad\\PYZ-00.pyz',
+('C:\\Users\\Samya Banerjee\\OneDrive\\Desktop\\Tkinter Final '
+ 'projects\\Notepad\\build\\Notepad\\PYZ-00.pyz',
  [('_compat_pickle',
    'C:\\Users\\Samya '
    'Banerjee\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\_compat_pickle.py',

@@ -1,7 +1,8 @@
 from tkinter import *
 from tkinter import messagebox as msg
 from tkinter.filedialog import askopenfilename,asksaveasfilename
-import os , time
+import os 
+from datetime import datetime
 #corresponding functions of the click-commands :-
 def new_window_command():
     global file
@@ -70,11 +71,18 @@ def Redo_command():
 def Select_all_command():
     text_widget.tag_add(SEL, "1.0", END)
 
+# def Time_and_Date_command():
+#     global file
+#     obj = time.gmtime(1627987508.6496193)
+#     time_str = time.asctime(obj)
+#     text_widget.insert(1.0, f"\nDay|Mon|Date|Time|  Year\n{time_str}\n\n")
+
 def Time_and_Date_command():
-    global file
-    obj = time.gmtime(1627987508.6496193)
-    time_str = time.asctime(obj)
-    text_widget.insert(1.0, f"\nDay|Mon|Date|Time|  Year\n{time_str}\n\n")
+    # Get the current date and time
+    now = datetime.now()
+    # Format it as 'Day|Mon|Date|Time|Year'
+    formatted_date = now.strftime("%a|%b|%d|%H:%M:%S|%Y")
+    text_widget.insert(1.0,f"\nDay|Mon|Date|Time|  Year\n{formatted_date}\n\n")
     
 def Font_command(x):
     match x:
