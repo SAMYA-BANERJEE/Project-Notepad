@@ -71,12 +71,6 @@ def Redo_command():
 def Select_all_command():
     text_widget.tag_add(SEL, "1.0", END)
 
-# def Time_and_Date_command():
-#     global file
-#     obj = time.gmtime(1627987508.6496193)
-#     time_str = time.asctime(obj)
-#     text_widget.insert(1.0, f"\nDay|Mon|Date|Time|  Year\n{time_str}\n\n")
-
 def Time_and_Date_command():
     # Get the current date and time
     now = datetime.now()
